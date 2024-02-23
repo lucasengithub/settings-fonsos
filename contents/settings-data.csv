@@ -1,0 +1,11 @@
+icono, titulo, descripcion, ubicacion
+contents/network.svg, Redes, Conectarse a internet., settings-items/wireless.html
+contents/devices.svg, Dispositivos, Periféricos e integraciones, settings-items/devices.html
+contents/audio.svg, Sonido, Adminstrar audio del sistema., settings-items/sound.html
+contents/vision.svg, Visión, Resolución y Fondos, settings-items/screen.html
+contents/energy.svg, Energía, Gestión de la energía del sistema., settings-items/power.html
+contents/apps.svg, Apps, Gestionar las aplicaciones., settings-items/apps.html
+contents/online.svg, Servicios en línea, Sincronización y cuentas., settings-items/online.html
+contents/usuarios.svg, Usuarios, Usuarios y Grupos., settings-items/users.html
+contents/avanzado.svg, Avanzado, Opciones de programador., settings-items/advanced.html
+contents/sistema.svg, Sistema, Información y actualizaciones., settings-items/os.html

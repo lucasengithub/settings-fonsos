@@ -1,0 +1,22 @@
+{
+    "name": "fonsos-settings",
+    "version": "1.0.0",
+    "description": "System settings for FonsOS",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "keywords": [
+        "settings",
+        "fonsos",
+        "configuration",
+        "system",
+        "tools"
+    ],
+    "author": "Lucas Peinado (lucaspeinado.es)",
+    "license": "LGPL-3.0-or-later",
+    "dependencies": {
+        "electron": "^13.1.7",
+        "papaparse": "^5.4.1"
+    }
+}

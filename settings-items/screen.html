@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="../interface_library.css">
+<body">
+    <h1>Pantallas</h1>
+
+    <div id="wallpaper-picker" class="big_card">
+        <button id="wallpaper-select" class="miniext">Subir</button>
+        <img class="monitor-cutout" src="~/Configurations/User/Wallpaper/current">
+        <h3>Fondo de pantalla.</h3>
+        <p>Seleccionar el fondo de pantalla predeterminado.</p>
+        <div id="wallpaper-carrusel"></div>
+    </div>
+
+    <br>
+    <h2 style="text-align: center;">Ayuda Ocular</h2>
+
+    <div id="brightness-control" class="big_card">
+        <input type="range" min="0" max="100" value="50" class="slider" id="brightness-slider">
+        <h3>Control de brillo.</h3>
+        <p>Ajustar el brillo de la pantalla.</p>
+
+    </div>
+
+    <div id="confort-modes" class="big_card">
+        <input class="miniext" type="checkbox"> <span class="slider"></span>
+        <h3>Modo de confort visual.</h3>
+        <p>Activar el modo de e-book para una lectura más cómoda.</p>
+
+    </div>
+
+    <div id="dark-mode" class="big_card">
+        <input class="miniext" type="checkbox"> <span class="slider"></span>
+        <h3>Modo oscuro.</h3>
+        <p>Activar el modo oscuro.</p>
+    </div>
+
+
+
+    <div id="night-light" class="big_card">
+        <input class="miniext" type="checkbox"> <span class="slider"></span>
+        <h3>Filtro de luz azul.</h3>
+        <p>Activar el filtro de luz azul para reducir la fatiga ocular.</p>
+
+    </div>
+
+    <br>   
+    <h2 style="text-align: center;">Dispositivos Secundarios</h2>
+
+    <div id="sidecar-pad" class="big_card">
+        <img class="miniext" src="../contents/open.svg">
+        <h3>Dispositivo como pantalla secundaria.</h3>  
+        <p>Conectar un dispositivo adicional como pantalla secundaria.</p>
+
+
+    </div>
+
+    <div id="wireless-display" class="big_card">
+        <img class="miniext" src="../contents/open.svg">
+        <h3>Conexión inalámbrica.</h3>
+        <p>Conectar la pantalla a un dispositivo inalámbrico.</p>
+
+    </div>
+
+    <br>
+    <h2 style="text-align: center;">Avanzado</h2>
+
+    <div id="color-profile" class="big_card">
+        <select class="miniext" id="color-profile-select">
+            <option value="sRGB">sRGB</option>
+            <option value="AdobeRGB">AdobeRGB</option>
+            <option value="DCI-P3">DCI-P3</option>
+            <option value="Rec. 2020">Rec. 2020</option>
+        </select>
+        <h3>Perfil de color.</h3>
+        <p>Seleccionar el perfil de color predeterminado.</p>
+
+    </div>
+
+
+    <div id="arandr" class="big_card">
+        <img class="miniext" src="../contents/open.svg">
+        <h3>Configuración de pantalla.</h3>
+        <p>Configurar la resolución y la disposición de las pantallas.</p>
+    </div>
+
+    <br><br><br>
+
+    
+
+
+
+</body>
+
+<script src="screen.js"></script>
+
+    

@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="../interface_library.css">
+<body>
+    <h1>Sonido</h1>
+    <div id="volume-control" class="big_card">
+        <h3>Control de volumen.</h3>
+        <input type="range" min="0" max="100" value="50" class="slider" id="volume-slider">
+        <p>Multimedia.</p>
+
+        <input type="range" min="0" max="100" value="50" class="slider" id="system-slider">
+        <p>Sistema.</p>
+    
+        <input type="range" min="0" max="100" value="50" class="slider" id="alarm-slider">
+        <p>Alarmas.</p>
+
+        <input type="range" min="0" max="100" value="50" class="slider" id="ring-slider">
+        <p>Llamadas.</p>
+
+        <input type="range" min="0" max="100" value="50" class="slider" id="notification-slider">
+        <p>Notificaciones.</p>
+    </div>
+    <div id="sound-profile" class="big_card">
+        <select class="miniext" id="sound-profile-select">
+            <option value="silent">Silencio</option>
+            <option value="vibrate">Vibración</option>
+            <option value="normal">Normal</option>
+        </select>
+        <h3>Perfil de sonido.</h3>
+        <p>Seleccionar el perfil de sonido predeterminado.</p>
+
+    </div>
+
+    <div id="pauvcontrol" class="big_card">
+        <img class="miniext" src="../contents/open.svg">
+        <h3>Gestionar dispositivos de sonido.</h3>
+        <p>Configurar el mixer de PulseAudio.</p>
+
+    </div>
+
+    <div id="qpaeq" class="big_card">
+        <img class="miniext" src="../contents/open.svg">
+        <h3>Ecualizador de sonido.</h3>
+        <p>Configurar el ecualizador de sonido.</p>
+
+    </div>
+    
+
+    <div id="papreferences" class="big_card">
+        <img class="miniext" src="../contents/open.svg">
+        <h3>Preferencias de PulseAudio.</h3>
+        <p>Configurar el servidor de sonido PulseAudio.</p>
+
+</body>
+
+<script src="sound.js"></script>
+
+    

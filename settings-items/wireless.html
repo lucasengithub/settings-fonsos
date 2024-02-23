@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="../interface_library.css">
+<body>
+    <h1>Redes</h1>
+    
+    <div class="hexpand">
+        <section id="network-status" class="cardmax">
+            <p>?</p>
+        </section>
+        <section id="network-check" class="cardmax">
+            <p>Comprobar velocidad</p>
+        </section>
+    </div>
+
+        <div class="big_card">
+            <select class="miniext" id="wifi-card"><option value="pwrof_wifi">Apagado</option><option value="wlan0">Red inalámbrica</option></select>
+            <h2>Wi-Fi</h2>
+        
+        </div>
+
+    <div id="nm-applet" class="big_card">
+       <img class="miniext" src="../contents/open.svg">
+       <h3>Opciones avanzadas de red.</h3>
+       <p>Gestionar las conexiones de red de manera gráfica con nm-applet.</p></div>
+
+    <br>   
+    <h2 style="text-align: center;">Privacidad y Seguridad</h2>
+
+    <div id="random-mac-address" class="big_card">
+        <input class="miniext" type="checkbox"> <span class="slider"></span>
+        <h3>Entrar en las redes con otra identidad.</h3>
+        <p>Activar la dirección MAC aleatoria para aumentar la privacidad.</p></div>
+
+
+    <div id="proxy-identity" class="big_card">
+        <select class="miniext" id="proxy"><option value="no-proxy">Apagado</option><option value="undefined">xxx</option><option value="manual-proxy">Manual</option></select>        
+        <h3>Identidad anónima en línea.</h3>
+        <p>Usar un servidor proxy para ocultar tu dirección IP.</p></div>
+
+    <div id="dns-filter" class="big_card">
+        <select class="miniext" id="proxy"><option value="no-filter">Sin Filtros</option><option value="ads">Sin Anuncios</option><option value="uncensored">Sin Censura</option><option value="manual-dns">Manual</option></select>        
+        <h3>Configuración de DNS.</h3>
+        <p>Usar un servidor DNS para filtrar el contenido.</p></div>
+
+    <div id="vpn-connection" class="big_card">
+        <img class="miniext" src="../contents/open.svg">
+        <h3>Conexión segura.</h3>
+        <p>Configurar una conexión VPN para proteger la privacidad.</p></div>
+    
+    <div id="tor-backend" class="big_card">
+        <select class="miniext" id="tor"><option value="auto-tor">Automático</option><option value="no-tor">Desactivado</option></select>
+        <h3>Subsistema Tor.</h3>
+        <p>Activar el soporte para la red Tor en determinadas aplicaciones que lo soporten.</p></div>
+
+    <div id="zeronet-backend" class="big_card">
+        <input class="miniext" type="checkbox"> <span class="slider"></span>
+        <h3>Subsistema ZeroNet.</h3>
+        <p>Activar la navegación anónima y la publicación de contenido en la red ZeroNet.</p></div>
+
+    <br><br><br>
+
+</body>
+
+<script src="wireless.js"></script>
+
+    
