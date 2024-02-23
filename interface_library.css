@@ -131,7 +131,8 @@ body{
 }
 .left-panel{
     width: 260px;
-    overflow-y:scroll; /* Permitir desplazamiento vertical cuando el contenido excede la altura máxima */
+    overflow: overlay;
+
     overflow-x: hidden;
     height: 100%;
     top: 0;
@@ -322,3 +323,37 @@ button:active{
 }
 
 
+::-webkit-scrollbar{
+    width: 10px;
+    background: transparent;
+    background-color: transparent;
+
+}
+
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+
+::-webkit-scrollbar:hover{
+    background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+    transition: 0.1s;
+
+  }
+
+
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #57575773;
+    transition: 0.1s;
+  }     
