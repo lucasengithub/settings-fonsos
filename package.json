@@ -1,22 +1,47 @@
 {
-    "name": "fonsos-settings",
-    "version": "1.0.0",
-    "description": "System settings for FonsOS",
-    "main": "index.js",
-    "scripts": {
-        "start": "electron ."
+  "name": "fonsos-settings",
+  "version": "0.0.1",
+  "description": "System settings for FonsOS",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/lucasengithub/settings-fonsos/settings",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+
+  
+  "build": {
+    "appId": "es.lucaspeinado.es.settings-fonsos",
+    "productName": "Ajustes",
+    "directories": {
+      "output": "out"
     },
-    "keywords": [
-        "settings",
-        "fonsos",
-        "configuration",
-        "system",
-        "tools"
-    ],
-    "author": "Lucas Peinado (lucaspeinado.es)",
-    "license": "LGPL-3.0-or-later",
-    "dependencies": {
-        "electron": "^13.1.7",
-        "papaparse": "^5.4.1"
+    "linux": {
+      "target": "dir"
     }
+  },
+  "keywords": [
+    "settings",
+    "fonsos",
+    "configuration",
+    "system",
+    "tools"
+  ],
+  "author": "Lucas Peinado (lucaspeinado.es)",
+  "license": "LGPL-3.0-or-later",
+  "dependencies": {
+    "electron-updater": "^6.1.8",
+    "papaparse": "^5.4.1",
+    "scrollbar-auto-hide": "^0.1.2"
+  },
+  "devDependencies": {
+    "electron": "^13.6.9",
+
+    "electron-builder": "^24.12.0"
+  }
 }
