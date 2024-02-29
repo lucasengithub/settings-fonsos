@@ -11,6 +11,8 @@ autoUpdater.autoDownload = true;
 autoUpdater.autoInstallOnAppQuit = true;
 
 const createWindow = () => {
+    const { BrowserWindow } = electron;
+
     const configs = {
         width: 800,
         height: 600,
@@ -20,7 +22,6 @@ const createWindow = () => {
             nodeIntegration: true,
             contextIsolation: false
         }
-        
     };
 
     autoUpdater.checkForUpdates();
