@@ -1,3 +1,5 @@
+
+
 document.getElementById('network-check').addEventListener('click', function() {
     var resultado = window.confirm('El test de red se hará de manera remota por medio de fast.com, propiedad de Netflix, Inc. \n\n¿Desea continuar?');
     if (resultado) {
@@ -15,7 +17,13 @@ document.getElementById('network-check').addEventListener('click', function() {
   });
 
 
-
+  document.getElementById('nm-applet').addEventListener('click', function() {
+    window.api.send('nm-edit');
+  });
+  
+  window.api.on('command-result', (stdout) => {
+    console.log(`Resultado: ${stdout}`);
+  });
 
 var networkStatus = document.getElementById('network-status');
   if (navigator.onLine) {
@@ -25,16 +33,9 @@ var networkStatus = document.getElementById('network-status');
   }
 
 
-  function recargarPagina() {
-    location.reload(); // Esta función recarga la página
-  }
 
-  // Llama a la función recargarPagina() cada minuto
-  setTimeout(recargarPagina, 60000); // 60000 milisegundos = 1 minuto
+  // Reload the page every minute
+  setTimeout(function() {
+    location.reload();
+  }, 60000);
 
-
-
-document.getElementById('nm-applet').addEventListener('click', function() {
-
-    alert("Se ha abierto el administrador de redes.")
-});

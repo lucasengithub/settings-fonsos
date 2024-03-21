@@ -13,8 +13,6 @@
     "provider": "github",
     "releaseType": "release"
   },
-
-  
   "build": {
     "appId": "es.lucaspeinado.es.settings-fonsos",
     "productName": "Ajustes",
@@ -24,7 +22,6 @@
     "linux": {
       "target": "dir"
     },
-
     "darwin": {
       "target": "dmg"
     }
@@ -45,7 +42,6 @@
   },
   "devDependencies": {
     "electron": "^13.6.9",
-
     "electron-builder": "^24.12.0"
   }
 }
